@@ -1,0 +1,79 @@
+:root {
+    --common-width: 1250px;
+    --percent-width: 100%
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial sans-serif;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+.header {
+    margin: 25px auto;
+    display: flex;
+    max-width: var(--common-width);
+    justify-content: center;
+}
+
+.container {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container-cards {
+    max-width: var(--common-width);
+    margin: 0 auto;
+    padding: 0 25px;
+    width: var(--percent-width);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.item {
+    justify-content: center;
+    background-color: white;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    width: var(--percent-width);
+    border: #828282 1px solid;
+    border-radius: 25px;
+    box-shadow: 6px 3px 5px 3px black;
+}
+
+.item:hover {
+    transform: scale(1.12);
+}
+
+.item-img {
+    max-width: 200px;
+    padding-bottom: 20px;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.price {
+    font-weight: bold;
+}
